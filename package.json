@@ -1,0 +1,48 @@
+{
+  "name": "quick-fin",
+  "version": "0.1.0",
+  "description": "MCP server for comprehensive, governed QuickBooks Online API access",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "quickbooks",
+    "accounting",
+    "api",
+    "financial"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.12.1",
+    "async-mutex": "0.5.0",
+    "better-sqlite3": "11.8.1",
+    "cockatiel": "3.2.1",
+    "decimal.js": "10.4.3",
+    "p-limit": "6.2.0",
+    "p-retry": "6.2.1",
+    "pino": "9.6.0",
+    "undici": "7.3.0",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.12",
+    "@types/node": "22.13.0",
+    "eslint": "9.19.0",
+    "nock": "14.0.1",
+    "tsx": "4.19.2",
+    "typescript": "5.7.3",
+    "vitest": "3.0.4"
+  }
+}
