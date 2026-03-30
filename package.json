@@ -5,13 +5,13 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node build.mjs",
     "dev": "tsx watch src/server.ts",
     "start": "node dist/server.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint src/",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "NODE_OPTIONS='--max-old-space-size=4096' tsc --noEmit"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -39,6 +39,7 @@
   "devDependencies": {
     "@types/better-sqlite3": "7.6.12",
     "@types/node": "22.13.0",
+    "esbuild": "^0.27.4",
     "eslint": "9.19.0",
     "nock": "14.0.1",
     "tsx": "4.19.2",
