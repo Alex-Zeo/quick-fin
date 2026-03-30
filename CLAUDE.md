@@ -2,6 +2,15 @@
 
 This file is for Claude Code. It defines rules, conventions, and constraints for working in this codebase. For human documentation see README.md. For architecture details see ARCHITECTURE.md.
 
+## File Responsibilities
+
+| File | Audience | Purpose | What goes here | What does NOT go here |
+|------|----------|---------|----------------|----------------------|
+| **CLAUDE.md** | Claude Code | Working instructions | Rules, conventions, build commands, code patterns, project structure, how to add entities/reports | Human onboarding, version history, project motivation |
+| **README.md** | Humans (GitHub) | Project documentation | What it does, install, usage, architecture diagram, security model, config reference, license | AI-specific rules, internal code conventions |
+| **CHANGELOG.md** | Humans (contributors) | Version history | What changed per release, known limitations | Architecture decisions, how-to guides |
+| **ARCHITECTURE.md** | Both | Design decisions | Audit findings, control design, thresholds, roadmap | Build commands, install steps, version history |
+
 ## Build & Run
 
 ```bash
