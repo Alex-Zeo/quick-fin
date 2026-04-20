@@ -124,3 +124,15 @@ docs/
 - **244 MCP tools** registered and responding
 - **Server entry point** wires stub dependencies — auth, governance, and audit subsystems need integration
 - **Next:** Wire real OAuth flow, connect governance pipeline to real RBAC/SoD/approval engines, connect audit logger to SQLite + external store
+
+<!-- VAULT-SYNC:pitfalls:START | hash=65e3edb1 | updated=2026-04-20T01:04:45Z -->
+_No pitfalls entries._
+<!-- VAULT-SYNC:pitfalls:END -->
+
+<!-- VAULT-SYNC:breakthroughs:START | hash=50f6fd29 | updated=2026-04-20T01:04:45Z -->
+- **Multi-persona audit: 3 independent personas find disjoint control failures**. See [[breakthroughs/2026-03-15-quick-fin-multi-persona-audit]].
+<!-- VAULT-SYNC:breakthroughs:END -->
+
+<!-- VAULT-SYNC:active-experiments:START | hash=5b47d191 | updated=2026-04-20T01:04:45Z -->
+_No active-experiments entries._
+<!-- VAULT-SYNC:active-experiments:END -->

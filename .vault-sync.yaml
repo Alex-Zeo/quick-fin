@@ -1,0 +1,25 @@
+version: 1
+project: quick-fin
+vault_root: ~/vault
+visibility_scope: private
+
+targets:
+  - file: CLAUDE.md
+    audience: agent
+    sections:
+      - marker: pitfalls
+        dimension: pitfalls
+        filter: {project: quick-fin}
+        sort: [first_observed desc]
+        max_items: 20
+        format: thin-pointer
+      - marker: breakthroughs
+        dimension: breakthroughs
+        filter: {project: quick-fin, since: 2026-03-01}
+        max_items: 10
+        format: thin-pointer
+      - marker: active-experiments
+        dimension: experiments
+        filter: {project: quick-fin, result: pending}
+        max_items: 10
+        format: thin-pointer
